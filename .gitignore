@@ -1,0 +1,11 @@
+_cache/
+_site/
+.stack-work/
+**/.DS_Store
+site.hi
+site.o
+site
+drafts/
+notes/
+dist/
+deploy.sh

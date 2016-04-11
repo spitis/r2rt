@@ -1,0 +1,32 @@
+<ul>
+  $for(posts)$
+    <li class="post-preview">
+      <h1 class="post-header"><a href="$url$">$title$</a></h1>
+      <h5>Posted on $date$
+        $if(category)$
+            in $category$
+        $endif$
+      </h5>
+      $if(preview)$
+        $preview$
+        <h5><a href="$url$">Read full post &raquo;</a></h5>
+      $else$
+        $body$
+      $endif$
+    </li>
+  $endfor$
+</ul>
+
+<div class="pagination">
+$if(previousPageUrl)$
+<div class="page-prev"><a href="$previousPageUrl$">newer posts &rsaquo;</a></div>
+$else$
+<div class="page-prev"><a style="visibility:hidden">newer posts &rsaquo;</a></div>
+$endif$
+
+$if(nextPageUrl)$
+<div class="page-next"><a href="$nextPageUrl$">&lsaquo; older posts</a></div>
+$else$
+<div class="page-next"><a style="visibility:hidden">&lsaquo; older posts</a></div>
+$endif$
+</div>

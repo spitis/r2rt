@@ -1,0 +1,53 @@
+@background:  #FFFFFF;
+@basecolor: #FFFFFF;
+
+@contrast: #E8653E;
+@contrast-darker: darken(@contrast, 10.0%);
+@lighttone: #37B7FF; //00DDD8 is the old one
+@lighttone-darker: darken(@lighttone, 10.0%);
+@lighttone-lighter: lighten(@lighttone, 10.0%);
+@midtone: #517398;
+@darktone: #262C3A;
+
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighte:            lighten(@gray-base, 85.0%); // ???
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+@gray-lightest:           lighten(@gray-base, 97.5%); // #eee
+
+//## Fonts from Typekit
+@logo-font-family: "industry",sans-serif;
+@sans-font-family: "proxima-nova",sans-serif;
+@serif-font-family:"schoolbook-web",sans-serif;
+
+//== Colors
+@brand-primary:         @midtone;
+@brand-success:         @lighttone;
+@brand-info:            @midtone;
+@brand-warning:         @contrast;
+@brand-danger:          @contrast;
+
+//== Scaffolding
+
+//** Background color for `<body>`.
+@body-bg:               @background;
+//** Global text color on `<body>`.
+@text-color:            @gray-dark;
+
+//** Global textual link color.
+@link-color:            @brand-primary;
+@link-hover-color:      darken(@link-color, 15%);
+@link-hover-decoration: underline;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+@font-family-sans-serif:  @sans-font-family;
+@font-family-serif:       @serif-font-family;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-serif;
+@headings-font-family:    @font-family-sans-serif;
